@@ -5,7 +5,7 @@ Les défits peuvent être réalisé en 1h ou sur une journées et sera spécifi�
 
 # Liste des challenges
 
-## TODO: 1h
+## Défit 1: TODO: 1h30
 Réaliser une application TODO en angular comprenant les éléments suivant:
 - Utilisation des composants
 - Utilisation de la nouvelle synthaxe (angular v17) @if @for
@@ -14,5 +14,8 @@ Réaliser une application TODO en angular comprenant les éléments suivant:
 - Utilisation des réactives forms
 - Utilisation des Image optimisée
 
-## Forum
+### Resultat
+![](./screenshots/result.png)
+
+## Défit 2: Forum
 Stockage des articles "in-memory".
