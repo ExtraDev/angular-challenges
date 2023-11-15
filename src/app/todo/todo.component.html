@@ -1,0 +1,9 @@
+<div class="todo" [ngClass]="{'done': todo.status}">
+    @if(!todo.status) {
+        <img ngSrc="../../assets/todo.png" alt="" width="25" height="25" (click)="toggleTodo()">
+    } @else {
+        <img ngSrc="../../assets/done.png" alt="" width="25" height="25" (click)="toggleTodo()">
+    }
+    <div class="todo-name">{{todo.name}}</div>
+    <button (click)="delete(todo.id)">X</button>
+</div>

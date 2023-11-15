@@ -1,0 +1,24 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+form {
+    .form-group {
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px;
+    }
+}

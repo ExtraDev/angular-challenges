@@ -1,0 +1,27 @@
+.todo {
+    padding: 10px;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+
+    .todo-name {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.todo:hover{
+    cursor: pointer;
+    background-color: rgb(203, 203, 203);
+}
+
+.done {
+    opacity: 50%;
+    text-decoration: line-through;
+}
