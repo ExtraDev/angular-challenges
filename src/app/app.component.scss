@@ -6,6 +6,9 @@
 }
 
 form {
+    display:flex;
+    flex-direction: column;
+
     .form-group {
         display:flex;
         flex-direction: column;
@@ -19,6 +22,17 @@ form {
 
     button {
         margin-top: 10px;
-        padding: 10px;
+        padding: 15px;
+        font-weight: 1.2em;
+        background-color: #0081A7;
+        color: white;
+        font-weight: bold;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #0056a7;
+        cursor: pointer;
     }
 }

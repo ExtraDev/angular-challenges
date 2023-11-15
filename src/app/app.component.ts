@@ -43,7 +43,6 @@ export class AppComponent {
 
   deleteTodo(id:number) {
     this.todos = this.todoService.deleteTodo(id);
-    console.log(this.todos);
   }
 
   updateOrder(): void {

@@ -5,5 +5,8 @@
         <img ngSrc="../../assets/done.png" alt="" width="25" height="25" (click)="toggleTodo()">
     }
     <div class="todo-name">{{todo.name}}</div>
-    <button (click)="delete(todo.id)">X</button>
+    <!-- <button (click)="delete(todo.id)">X</button> -->
+    <div (click)="delete(todo.id)">
+        <img ngSrc="../../assets/trash.png" alt="" width="25" height="25">
+    </div>
 </div>
