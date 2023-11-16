@@ -3,5 +3,24 @@
     flex-direction: column;
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid gray;
+    background-color: white;
+    box-shadow: 0px 5px 5px gray;
+
+    img {
+        width: 70%;
+        margin: auto;
+    }
+
+    a {
+        background-color: #2541B2;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #1768AC;
+    }
 }

@@ -1,12 +1,14 @@
 @if(article) {
     <div class="article-detail">
         <h2>{{article.title}}</h2>
-        <div>{{article.date}}</div>
+        <p>Publié le: {{article.date}}</p>
         <img src="{{article.thumbnail}}" alt="">
         <div class="article-content">
             <p>
                 {{article.content}}
             </p>
         </div>
+
+        <a routerLink="/"><< Retour</a>
     </div>
 }
