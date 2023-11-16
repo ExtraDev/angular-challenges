@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    background-color: #2541B2;
+    height: 50px;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    a {
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #1768AC;
+    }
+
+    .activeLink {
+        background-color: #06BEE1;
+    }
+}
+
+.container {
+    margin-top: 75px;
+}

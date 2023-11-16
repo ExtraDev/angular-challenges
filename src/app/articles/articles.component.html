@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Liste des articles</h1>
+    <div class="articles">
+      
+      @for(article of articles; track article.id) {
+        <app-article-tile [article]="article"></app-article-tile>
+      }
+  
+    </div>
+  </div>
