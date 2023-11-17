@@ -14,8 +14,28 @@ Réaliser une application TODO en angular comprenant les éléments suivant:
 - Utilisation des réactives forms
 - Utilisation des Image optimisée
 
-### Resultat
-![](./screenshots/result.png)
+### Résultat
+![](./screenshots/todolist/result.png)
 
-## Défit 2: Forum
-Stockage des articles "in-memory".
+## Défit 2: Liste d'article: 3h
+Création d'un mini site pour l'affichage et la rédaction d'article simplifié.
+- Utilisation des composants
+- Utilisation de la nouvelle synthaxe (angular v17) @if @for
+- Utilisation d'injectables
+- Utilisation des réactives forms
+- Système de routing
+
+### Résultat
+Page d'accueil
+![](./screenshots/articles/home.png)
+
+Détail de l'article
+![](./screenshots/articles/articleDetail.png)
+
+Rédiger un article
+![](./screenshots/articles/articleForm.png)
+
+Page / article non trouvé
+![](./screenshots/articles/notFound.png)
+
+## Défit 3: Création de facture
