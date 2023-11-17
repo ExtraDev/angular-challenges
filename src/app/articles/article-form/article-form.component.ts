@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ArticlesService } from '../articles.service';
-import { Article } from '../article.model';
 
 @Component({
   selector: 'app-article-form',
@@ -12,6 +11,7 @@ import { Article } from '../article.model';
   styleUrl: './article-form.component.scss'
 })
 export class ArticleFormComponent {
+
   articleForm = new FormGroup({
     title: new FormControl<string>('', Validators.required),
     date: new FormControl<string>('', Validators.required),

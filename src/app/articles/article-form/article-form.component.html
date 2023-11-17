@@ -1,6 +1,7 @@
 <div class="container">
     <h1>Rédiger mon article</h1>
     <form [formGroup]="articleForm" (ngSubmit)="createArticle()">
+        
         <div class="form-group">
             <label for="title">Titre de l'article</label>
             <input type="text" id="title" formControlName="title">
@@ -18,6 +19,6 @@
             <input type="text" id="thumbnail" formControlName="thumbnail">
         </div>
 
-        <button type="submit">Créer l'article</button>
+        <button type="submit" [disabled]="!articleForm.valid">Créer l'article</button>
     </form>
 </div>
