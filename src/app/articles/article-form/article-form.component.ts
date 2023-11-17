@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ArticlesService } from '../articles.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-article-form',
@@ -19,10 +20,12 @@ export class ArticleFormComponent {
     thumbnail: new FormControl(<string>'', Validators.required)
   })
 
-  constructor(private articlesService: ArticlesService) {}
+  constructor(private articlesService: ArticlesService,
+    private router: Router) {}
 
   createArticle() {
-    this.articlesService.postArticle(this.articleForm.value);
+    let newArticle = this.articlesService.postArticle(this.articleForm.value);
+    this.router.navigate([`/article/${newArticle.id}`])
   }
 
 }

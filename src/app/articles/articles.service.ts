@@ -20,8 +20,10 @@ export class ArticlesService {
     });
   }
 
-  postArticle(article: any): void {
+  postArticle(article: any): Article {
     article.id = this.articles.length + 1;
     this.articles.push(article);
+
+    return article;
   }
 }
