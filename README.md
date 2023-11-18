@@ -38,4 +38,4 @@ Rédiger un article
 Page / article non trouvé
 ![](./screenshots/articles/notFound.png)
 
-## Défit 3: Création de facture
+## Défit 3: Gestion de factures
