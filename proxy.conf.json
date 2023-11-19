@@ -1,0 +1,7 @@
+{
+    "/api" : {
+        "target": "https://fakenews.squirro.com/news/sport",
+        "secure": false,
+        "changeOrigin": true
+    }
+}
