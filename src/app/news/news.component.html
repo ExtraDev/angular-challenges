@@ -1,1 +1,5 @@
-<p>news works!</p>
+<table *ngIf="news">
+    <tr *ngFor="let new of news">
+        <td>{{new.headline}}</td>
+    </tr>
+</table>

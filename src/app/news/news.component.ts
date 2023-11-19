@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { News } from '../common/models/news';
 import { NewsService } from '../common/news.service';
 import { response } from 'express';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-news',
@@ -14,7 +15,9 @@ export class NewsComponent implements OnInit {
   constructor(private newsService: NewsService) { }
 
   ngOnInit(): void {
-    this.newsService.getNews$().subscribe(response => this.news = response)
+    this.newsService.getNews$().pipe(
+      tap(x => console.log(x))
+    ).subscribe(response => this.news = response);
   }
 
 }
