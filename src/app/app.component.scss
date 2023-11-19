@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 30px;
+    padding: 15px;
+    margin-top: 15px;
+
+    #header, #content, #summary {
+        flex: 1;
+        display: flex;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 15px;
+        flex-direction: row;
+    }
+
+    #header {
+        .title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    }
+
+    #content {
+        table {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            height: 81vh;
+            max-height: 81vh;
+            overflow-y: auto;
+
+            tr {
+                display: flex;
+                flex-direction: row;
+                padding: 15px;
+                border-bottom: 1px solid gray;
+
+                td {
+                    flex: 1;
+                }
+            }
+        }
+
+
+    }
+
+    #summary {
+    }
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.payed {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: green;
+}
+
+.unpayed {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: red;
+}

@@ -1,0 +1,32 @@
+<div class="container">
+  <div id="header">
+    <div class="flex-1 title">Titre</div>
+    <div class="flex-1 title">Date facturation</div>
+    <div class="flex-1 title">Cient</div>
+    <div class="flex-1 title">Somme</div>
+    <div class="flex-1 title">Statut</div>
+  </div>
+  <div id="content">
+    <table>
+      @for(bill of bills; track bill.id) {
+        <tr>
+          <td>{{ bill.name }}</td>
+          <td>{{ bill.date | date : "dd.MM.yyyy" }}</td>
+          <td></td>
+          <td>{{ bill.amount | currency:'CHF':'symbol':'0.2-2':'de-CH'}}</td>
+          @if(bill.payed) {
+            <td><div class="payed"></div></td>
+          } @else {
+            <td><div class="unpayed"></div></td>
+          }
+        </tr>
+      }
+    </table>
+  </div>
+  <div id="summary">
+    <div class="flex-1"></div>
+    <div class="">Total impayé: {{ computeAmountPayed()[1] | currency:'CHF':'symbol':'0.2-2':'de-CH'}}</div>
+    <div class="flex-1"></div>
+    <div class="">Total payé: {{ computeAmountPayed()[0] | currency:'CHF':'symbol':'0.2-2':'de-CH'}}</div>
+  </div>
+</div>

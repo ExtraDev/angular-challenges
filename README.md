@@ -1,41 +1,27 @@
-# Présentation
-Ce repository contient des challenges (sur des branches différentes) pour apprendre à coder avec Angular.
+# Billing
 
-Les défits peuvent être réalisé en 1h ou sur une journées et sera spécifié en haut de chaque challenge.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
-# Liste des challenges
+## Development server
 
-## Défit 1: TODO: 1h30
-Réaliser une application TODO en angular comprenant les éléments suivant:
-- Utilisation des composants
-- Utilisation de la nouvelle synthaxe (angular v17) @if @for
-- Utilisation d'injectables
-- Utilisation des @Inputs
-- Utilisation des réactives forms
-- Utilisation des Image optimisée
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### Résultat
-![](./screenshots/todolist/result.png)
+## Code scaffolding
 
-## Défit 2: Liste d'article: 3h
-Création d'un mini site pour l'affichage et la rédaction d'article simplifié.
-- Utilisation des composants
-- Utilisation de la nouvelle synthaxe (angular v17) @if @for
-- Utilisation d'injectables
-- Utilisation des réactives forms
-- Système de routing
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Résultat
-Page d'accueil
-![](./screenshots/articles/home.png)
+## Build
 
-Détail de l'article
-![](./screenshots/articles/articleDetail.png)
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Rédiger un article
-![](./screenshots/articles/articleForm.png)
+## Running unit tests
 
-Page / article non trouvé
-![](./screenshots/articles/notFound.png)
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Défit 3: Gestion de factures
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
