@@ -5,6 +5,10 @@ export class News {
     public body?: string;
     public date?: Date;
 
+    constructor(id?: number) {
+        this.id = id;
+    }
+
     public getDay(): number {
         return this.date?.getDate() || 0;
     }

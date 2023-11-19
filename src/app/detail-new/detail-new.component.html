@@ -1,0 +1,10 @@
+<ng-container *ngIf="(new$ | async) as new">
+    <h1>{{new.id}}</h1>
+    <h1>
+        {{new.headline}}
+    </h1>
+</ng-container>
+
+
+
+<a routerLink="/">Retour accueil</a>
