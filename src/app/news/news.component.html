@@ -1,5 +1,38 @@
-<table *ngIf="news">
-    <tr *ngFor="let new of news">
-        <td>{{new.headline}}</td>
-    </tr>
-</table>
+
+<ng-container *ngIf="loading; else listNews">
+    loading
+</ng-container>
+
+<ng-template #listNews>
+    <h1>Liste basique de chez basique</h1>
+    <ul *ngIf="news">
+        <li *ngFor="let new of news">
+            {{new.headline}}
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    
+    <h1>Liste async basique</h1>
+    <ul *ngIf="news">
+        <li *ngFor="let new of newsObservable$ | async">
+            {{new.headline}}
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    
+    <h1>Liste async avec ID</h1>
+    <ul *ngIf="news">
+        <li *ngFor="let new of formatted$ | async">
+            {{new.headline}}
+        </li>
+    </ul>
+    
+    
+</ng-template>
+
+<button (click)="reloadNews()">Recharcher les news</button>
+    <button (click)="reloadNewsForceRefresh()">Recharcher les news forceRefresh</button>
