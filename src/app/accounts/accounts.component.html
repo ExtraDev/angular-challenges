@@ -1,13 +1,13 @@
-
 <h1><ng-content></ng-content></h1>
 
 <h2>List de mes factures non payées</h2>
-<table>
-
-</table>
+<ul>
+    <li *ngFor="let bill of bills$ | async">
+        {{bill.name}}
+    </li>
+</ul>
 
 <h2>List de mes factures payées</h2>
 <table>
 
 </table>
-

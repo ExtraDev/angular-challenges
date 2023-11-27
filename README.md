@@ -1,8 +1,8 @@
 # Éléments à implémenté
-- [  ] Implémentation de composant
-- [  ] Création de modules
-- [  ] Système de routing
-- [  ] notions de ng-content
+- [ X ] Implémentation de composant
+- [ X ] Création de modules
+- [ X ] Système de routing
+- [ X ] notions de ng-content
 - [  ] "on pushed"
 - [  ] Services
 - [  ] observable
