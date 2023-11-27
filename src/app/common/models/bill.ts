@@ -27,4 +27,20 @@ export class Bill {
         this.client = client;
         this.products = products;
     }
+
+    public cumputePrice(): number {
+        let price = 0;
+
+        if (this.products) {
+            for (let product of this.products) {
+                price += product.price || 0;
+            }
+        }
+
+        return price
+    }
+
+    public getClient(): string {
+        return `${this.client?.firstname} ${this.client?.lastname}`;
+    }
 }

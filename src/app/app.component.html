@@ -1,6 +1,9 @@
 <nav>
-    <div class="nav-element" routerLink=""><span>Accounts</span></div>
-    <div class="nav-element" routerLink="test"><span>404</span></div>
+    <div class="nav-element" routerLink="" routerLinkActive="isActive" [routerLinkActiveOptions]="{exact: true}">
+        <span>Comptabilité</span>
+    </div>
+    <div class="nav-element" routerLink="create/" routerLinkActive="isActive"><span>Créer une facture</span></div>
+    <div class="nav-element" routerLink="404" routerLinkActive="isActive"><span>404</span></div>
 </nav>
 
 <div class="container">

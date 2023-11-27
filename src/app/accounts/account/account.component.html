@@ -1,1 +1,35 @@
-<p>account works!</p>
+<ng-container *ngIf="(bill$ | async) as bill">
+    <div class="bill">
+        <div>
+            {{bill.id}}
+        </div>
+        <div>{{bill.name}}</div>
+        <div>{{bill.date}}</div>
+        <div>{{bill.payedUntil}}</div>
+        <div>{{bill.isPayed}}</div>
+        <div>{{bill.client?.firstname}} {{bill.client?.lastname}}</div>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of bill.products">
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price | currency:'CHF':'symbol':'0.2-2':'de-CH'}}</td>
+                </tr>
+                <tr>
+                    <td class="tot" colspan="2">Total:</td>
+                    <td>{{bill.cumputePrice() | currency:'CHF':'symbol':'0.2-2':'de-CH'}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</ng-container>

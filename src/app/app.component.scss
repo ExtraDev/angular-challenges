@@ -19,9 +19,11 @@ nav {
         }
     }
 
-
-
     .nav-element:hover {
+        background-color: #003554;
+    }
+
+    .isActive {
         background-color: #003554;
     }
 }
@@ -32,4 +34,5 @@ nav {
     max-width: 1024px;
     margin: auto;
     margin-top: 25;
+    padding: 15px;
 }

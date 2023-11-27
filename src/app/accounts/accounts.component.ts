@@ -10,12 +10,12 @@ import { Observable } from 'rxjs';
 })
 export class AccountsComponent implements OnInit {
     public bills$ = this.accountService.getBills$();
+    public billsPayed$ = this.accountService.getBillPayed$();
+    public billsUnPayed$ = this.accountService.getBillUnPayed$();
 
     constructor(private accountService: AccountsService) { }
 
     ngOnInit(): void {
-        console.log(this.bills$);
-        // console.log(this.bills$);
     }
 
 }

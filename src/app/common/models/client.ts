@@ -1,8 +1,8 @@
 export class Client {
-    private id: number;
-    private firstname: string;
-    private lastname: string;
-    private address: string;
+    public id?: number;
+    public firstname?: string;
+    public lastname?: string;
+    public address?: string;
 
     constructor(
         id: number,
@@ -16,5 +16,7 @@ export class Client {
         this.address = address;
     }
 
-
+    getFullName(): string {
+        return `${this.firstname} ${this.lastname}`
+    }
 }

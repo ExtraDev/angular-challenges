@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Bill } from './models/bill';
-import { tap, map } from 'rxjs/operators';
+import { tap, map, filter } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { Product } from './models/product';
 
 @Injectable({
     providedIn: 'root'
@@ -14,15 +15,38 @@ export class AccountsService {
 
     getBills$(): Observable<Bill[]> {
         return this.httpClient.get<Bill[]>('../../assets/bills.json').pipe(
-            // tap((data) => console.log(data)),
             map((data: any) => data.bills),
             map((data) =>
-                data.map((bill: Bill) => Object.assign(new Bill(), bill))
+                data.map((bill: Bill) => Object.assign(new Bill(), bill)),
+
             ),
             tap(bills => {
                 this.bills = bills
-                console.log(this.bills);
+                // console.log(this.bills);
             })
+        )
+    }
+
+    getBillPayed$(): Observable<Bill[] | undefined> {
+        return this.getBills$().pipe(
+            map((bills) =>
+                bills.filter((bill: Bill) => bill.isPayed === true)
+            )
+        )
+    }
+
+    getBillUnPayed$(): Observable<Bill[] | undefined> {
+        return this.getBills$().pipe(
+            map((bills) =>
+                bills.filter((bill: Bill) => bill.isPayed !== true)
+            )
+        )
+    }
+
+    getBill$(id?: string): Observable<Bill | undefined> {
+        return this.getBills$().pipe(
+            map((bills) => bills.find((bill) => bill.id === id)),
+            tap(bill => console.log(bill))
         )
     }
 }
