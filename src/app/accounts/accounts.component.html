@@ -49,7 +49,7 @@
             <td>{{bill.payedUntil}}</td>
             <td>{{bill.getClient()}}</td>
             <td>{{bill.cumputePrice() | currency:'CHF':'symbol':'0.2-2':'de-CH'}}</td>
-            <td><button>Afficher le détail</button></td>
+            <td><button routerLink="account/{{bill.id}}">Afficher le détail</button></td>
         </tr>
     </tbody>
 </table>

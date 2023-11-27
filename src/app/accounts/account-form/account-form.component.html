@@ -1,1 +1,22 @@
-<p>account-form works!</p>
+<form [formGroup]="accountForm" (ngSubmit)="createBill()">
+    <div class="form-group">
+        <label for="">N° Facture</label>
+        <input type="text" formControlName="id">
+    </div>
+    <div class="form-group">
+        <label for="">Nom</label>
+        <input type="text" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label for="">Date</label>
+        <input type="date" formControlName="date">
+    </div>
+    <div class="form-group">
+        <label for="">Échéance paiement</label>
+        <input type="date" formControlName="payedUntil">
+    </div>
+
+    <div class="products"></div>
+
+    <button type="submit" [disabled]="!accountForm.valid">Créer la facture</button>
+</form>

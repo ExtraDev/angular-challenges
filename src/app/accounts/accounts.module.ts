@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import localeFr from '@angular/common/locales/de-CH';
 import { RouterModule } from '@angular/router';
 import { AccountFormComponent } from './account-form/account-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 registerLocaleData(localeFr);
 
@@ -17,6 +18,7 @@ registerLocaleData(localeFr);
     ],
     imports: [
         CommonModule,
+        ReactiveFormsModule,
         HttpClientModule,
         RouterModule
     ],

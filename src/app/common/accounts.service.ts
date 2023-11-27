@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Bill } from './models/bill';
 import { tap, map, filter } from 'rxjs/operators';
 import { Observable } from 'rxjs';
-import { Product } from './models/product';
 
 @Injectable({
     providedIn: 'root'
@@ -18,12 +17,10 @@ export class AccountsService {
             map((data: any) => data.bills),
             map((data) =>
                 data.map((bill: Bill) => Object.assign(new Bill(), bill)),
-
             ),
-            tap(bills => {
+            tap(bills =>
                 this.bills = bills
-                // console.log(this.bills);
-            })
+            )
         )
     }
 

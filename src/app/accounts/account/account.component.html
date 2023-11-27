@@ -1,8 +1,6 @@
 <ng-container *ngIf="(bill$ | async) as bill">
     <div class="bill">
-        <div>
-            {{bill.id}}
-        </div>
+        <div>N°: {{bill.id}}</div>
         <div>{{bill.name}}</div>
         <div>{{bill.date}}</div>
         <div>{{bill.payedUntil}}</div>
@@ -13,7 +11,7 @@
         <table>
             <thead>
                 <tr>
-                    <th>N°</th>
+                    <th>Facture N°</th>
                     <th>Description</th>
                     <th>Prix</th>
                 </tr>

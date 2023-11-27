@@ -16,8 +16,7 @@ export class AccountComponent implements OnInit {
     constructor(private route: ActivatedRoute,
         private accountService: AccountsService) { }
 
-    ngOnInit(): void {
-    }
+    ngOnInit(): void { }
 
     private loadBill(): Observable<Bill | undefined> {
         return this.route.params.pipe(
