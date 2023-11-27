@@ -1,10 +1,10 @@
-# Éléments à implémenté
+# Éléments à implémenter
 - [ X ] Implémentation de composant
 - [ X ] Création de modules
 - [ X ] Système de routing
 - [ X ] notions de ng-content
 - [  ] "on pushed"
-- [  ] Services
-- [  ] observable
-- [  ] Gestion des streams
+- [ X ] Services
+- [ X ] observable
+- [ X ] Gestion des streams
 - [  ] Reactive form
