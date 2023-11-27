@@ -1,0 +1,145 @@
+{
+    "bills" : [
+        {
+            "id": "FR-001",
+            "date": "12.01.2023",
+            "payedUntil": "12.02.2023",
+            "name": "Création de site web",
+            "isPayed": false,
+            "client": {
+                "id": 1,
+                "firstname": "John",
+                "lastname": "Doe",
+                "address": "123 Ch. des Marbriers, 1290 Versoix"
+            },
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Maquette site web",
+                    "price": 150
+                },{
+                    "id": 2,
+                    "name": "Design logo",
+                    "price": 400
+                },{
+                    "id": 3,
+                    "name": "Création du site web",
+                    "price": 1000
+                },{
+                    "id": 4,
+                    "name": "Mise en ligne + configuration hebergement + boîte mail",
+                    "price": 250
+                }
+            ]
+        },
+        {
+            "id": "FR-002",
+            "date": "03.09.2022",
+            "payedUntil": "01.12.2022",
+            "name": "Services de conseil en marketing",
+            "isPayed": true,
+            "client": {
+                "id": 72,
+                "firstname": "Robert",
+                "lastname": "Smith",
+                "address": "456 Oak Avenue, Rivertown"
+            },
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Analyse de marché",
+                    "price": 180
+                },
+                {
+                    "id": 2,
+                    "name": "Stratégie de marketing digital",
+                    "price": 550
+                }
+            ]
+        },{
+            "id": "FR-003",
+            "date": "22.05.2022",
+            "payedUntil": "20.08.2022",
+            "name": "Développement d'application mobile",
+            "isPayed": false,
+            "client": {
+                "id": 89,
+                "firstname": "Emily",
+                "lastname": "Davis",
+                "address": "567 Pine Lane, Greenvale"
+            },
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Conception de l'interface utilisateur",
+                    "price": 300
+                },
+                {
+                    "id": 2,
+                    "name": "Développement des fonctionnalités principales",
+                    "price": 800
+                },
+                {
+                    "id": 3,
+                    "name": "Intégration de la géolocalisation",
+                    "price": 200
+                }
+            ]
+        },
+        {
+            "id": "FR-004",
+            "date": "10.07.2022",
+            "payedUntil": "08.10.2022",
+            "name": "Services de design graphique",
+            "isPayed": true,
+            "client": {
+                "id": 32,
+                "firstname": "Sophia",
+                "lastname": "Miller",
+                "address": "987 Maple Street, Oakville"
+            },
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Création de logo",
+                    "price": 150
+                },
+                {
+                    "id": 2,
+                    "name": "Conception de brochures",
+                    "price": 280
+                },
+                {
+                    "id": 3,
+                    "name": "Design de site web",
+                    "price": 450
+                }
+            ]
+        },
+        {
+            "id": "FR-005",
+            "date": "05.04.2022",
+            "payedUntil": "03.07.2022",
+            "name": "Consultation en gestion financière",
+            "isPayed": false,
+            "client": {
+                "id": 47,
+                "firstname": "Daniel",
+                "lastname": "Taylor",
+                "address": "234 Cedar Drive, Hilltop"
+            },
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Analyse financière",
+                    "price": 200
+                },
+                {
+                    "id": 2,
+                    "name": "Planification budgétaire",
+                    "price": 350
+                }
+            ]
+        }
+    ]
+}
